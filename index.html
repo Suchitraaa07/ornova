@@ -4,63 +4,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Login</title>
-  <script>
-    document.getElementById("signup-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the form from submitting
-
-    const username = document.getElementById("username").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    // Create a user object
-    const user = {
-        username: username,
-        email: email,
-        password: password // Note: Passwords should not be stored in plain text in a real application!
-    };
-
-    // Store user data in local storage
-    localStorage.setItem("user", JSON.stringify(user));
-
-    alert("Sign-up successful! Data stored locally.");
-});
-  </script>
+  <title>thanks</title>
   <style>
-    h1 {
+    header {
       text-align: center;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      color: rgb(202, 18, 79);
+      background-color: rgb(255, 182, 182);
+      padding: 10px;
+      width: 100%;
     }
 
-    .form {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-style: oblique;
-      background-color: blanchedalmond;
-      font-size: 25px;
-      padding: 20px;
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+        background-image: url('https://th.bing.com/th/id/OIP.kD5CQpUA3LhUc-E66LDjzQHaE7?w=243&h=180&c=7&r=0&o=5&pid=1.7');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+  
+    }
+    .end {
+        background-color: rgba(255, 255, 255, 0.849);
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    button {
+      display: block;
+      margin: auto;
+      margin-top: 30px;
+      font-size: 15px;
     }
   </style>
 </head>
 
-<body> <form action="homepage.html">
-  <header>
-    <h1>Login to Proceed</h1>
-  </header>
-  <div class="form">
-    <label for="name">Full Name:</label>
-    <input type="text" name="name" id="name" width="300px" required><br><br>
-
-    <label for="address">Address:</label>
-    <textarea id="address" name="address" cols="30" rows="5" required></textarea><br><br>
-
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required><br><br>
-
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" required><br><br>
-    <button>Submit</button>
-  </div>
+<body>
+  <form action="homepage.html">
+    <div class="end">
+  <h1>Thanks for Buying!</h1>
+  <h2>Your order is placed.<h2>
+    <img src="https://th.bing.com/th/id/OIP.spRJ8U1KBdmSiDRvGZrFXQHaFX?w=190&h=180&c=7&r=0&o=5&pid=1.7" width="80" height="80">
+</div>
+<div class="but"></div>
+<button>Back to Homepage</button>
+</div>
 </form>
 </body>
-
 </html>
