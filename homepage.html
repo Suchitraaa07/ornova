@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>homepage</title>
+  <style>
+.product {
+    display: flex;
+}
+header {
+    background-color: teal;
+    text-align: center;
+}
+.heading {
+    width: 100%;
+    display: flex;
+}
+header h1 {
+    font-size: 75px;
+    padding: 20px;
+}
+.logo{
+    float: left;
+}
+.subhead {
+    background-color: whitesmoke;
+}
+nav {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.h2 {
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: rgb(5, 41, 95);
+    font-style: italic;
+    text-decoration: underline;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    margin-top: 10px;
+    border: 10px solid white;
+    font-size: 25px;
+}
+body {
+    
+    background-image: url('https://th.bing.com/th/id/OIP.38LnisCRDhNeQrpkTF6SMgHaE7?w=217&h=180&c=7&r=0&o=5&pid=1.7');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+footer {
+    font-size: 20px;
+    font-weight: bold;
+}
+.pro {
+    display: flex;
+}
+@media (min-width: 600px) {
+        .product {
+            flex-wrap: wrap;
+        }
+        .pro {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .heading {
+            flex-direction: row;
+        }
+        .pro {
+            flex-wrap: nowrap;
+        }
+        .products {
+            margin: 15px;
+        }
+    }
+  </style>
+</head>
+<body>
+    
+  <header>
+    <div class="heading">
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIP.eFYlCCVnwiLR9hNc2XGPFgHaHa?pid=ImgDet&w=191&h=191&c=7" width="200" height="200">    
+        </div>
+    <h1 style="color: white;">Ornova</h1>
+</div>
+     
+    <div class="subhead">
+        <nav aria-label="main navigation">
+            <a href="earrings.html" aria-label="earring">Earrings</a>
+            <a href="Bracelet.html" aria-label="bracelet">Bracelet</a>
+            <a href="Rings.html" aria-label="ring">Rings</a>
+            <a href="Necklace.html" aria-label="necklace">Necklace</a>
+            </nav>
+            <h2>Welcome to the world of fashion!</h2>
+    </div>
+  </header>
+  <form action="/search_results" method="GET">
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="query" placeholder="Enter search term" required>
+    <button type="submit">Search</button>
+</form>
+ <h1 aria-label="Top selling product">
+    Our top selling products
+ </h1>
+ <form action="Payment.html">
+ <div class="pro">
+ <div class="products">
+<img src="https://th.bing.com/th/id/OIP.iOmxuHH3fGOKp0n9vxwM8wHaJR?w=169&h=212&c=7&r=0&o=5&pid=1.7">
+<figcaption>2900/-</figcaption>
+<button>Buy Now</button>
+ </div>
+ <div class="products">
+    <img src="https://th.bing.com/th/id/OIP.PqxHxYj8y-Bnb5vLvltsxwAAAA?w=170&h=180&c=7&r=0&o=5&pid=1.7">
+    <caption>1500/-</caption>
+    <button>Buy Now</button>
+     </div>
+    <div class="products">
+        <img src="https://th.bing.com/th/id/OIP.e8n5p6HJxM7rT3qO5mcSIwHaHZ?w=168&h=180&c=7&r=0&o=5&pid=1.7">
+        <caption>3500/-</caption>
+        <button>Buy Now</button>
+         </div>
+         <div class="products">
+            <img src="https://th.bing.com/th/id/OIP.O0MDF4ArFWkNV2EYaTpwEQHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+            <caption>1600/-</caption>
+            <button>Buy Now</button>
+             </div>
+             <div class="products">
+                <img src="https://th.bing.com/th/id/OIP.nJzhzuRnHSE9NzVTd-r96QHaFj?w=264&h=206&c=7&r=0&o=5&pid=1.7">
+                <caption>900/-</caption>
+                <button>Buy Now</button>
+                 </div>
+        </div>
+    </form>
+        <footer>
+            <br><br>
+            To know more about us please visit: <br>
+            <a href="About us.html">About us</a><br>
+            To rate us or contact us for any issue click on the link below: <br>
+            <a href="feedback.html">Feedback</a><br>
+        </footer>
+    </body>
+</html>

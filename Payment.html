@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Payment</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .form {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: oblique;
+      background-color: blanchedalmond;
+      font-size: 25px;
+      padding: 20px;
+    }
+    select {
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    button {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: rgb(236, 216, 125);
+    }
+  </style>
+</head>
+
+<body> <form action="thanks.html">
+  <header>
+    <h1>Payment</h1>
+  </header>
+  <div class="form">
+    Cardtype: 
+    <select>
+        <option value="debit">debit</option>
+        <option value="master">master</option>
+        <option value="viso">viso</option>
+        <option value="COD">Cash on delivery</option>
+    </select><br><br>
+    <label for="name">Account holder Name:</label>
+    <input type="text" name="name" id="name"  required><br><br>
+
+    <label for="card number">Card Number:</label>
+    <input type="card" id="card number" name="card number" required><br><br>
+
+    <label for="date">Expiration date</label>
+    <input type="date" required><br><br>
+    <button>Proceed</button>
+
+  </div>
+</form>
+</body>
+
+</html>
