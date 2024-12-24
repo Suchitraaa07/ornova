@@ -4,28 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>thanks</title>
+  <title>feedback</title>
   <style>
     header {
       font-size: 60px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-style: italic;
       padding: 10px;
-      text-decoration: underline;
       width: 100%;
       margin: 40px;
       margin-left: 0%;
+      text-align: center;
+      color: rgb(1, 51, 51);
     }
-
+    textarea {
+      width: 300px;
+    }
+    .review {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: cadetblue;
+      padding: 35px;
+      border-right: white solid 200px;
+      border-left: white solid 200px;
+    }
     body {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
         font-size: 25px;
-        background-color: blanchedalmond;
+    }
+    label {
+      font-size: 23px;
+      padding: 10px;
     }
     button {
-        width: 60px;
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        font-weight: 700;
     }
   </style>
 </head>
@@ -33,8 +50,10 @@
     <header>
         Feedback
     </header>
-<label for="review">Write a review:</label>
-    <textarea id="review" name="review" cols="30" rows="5" required></textarea><br>
+    <div class="review">
+<label for="review">Write a review below:</label>
+    <textarea id="review" name="review" cols="15" rows="5" required></textarea><br>
     <button>Submit</button>
+  </div>
 </body>
 </html>
