@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Earrings</title>
+  <style>
+    header {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      color: rgb(202, 18, 79);
+      background-color: lightpink;
+      padding: 10px;
+      width: 1300px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url('https://th.bing.com/th/id/OIP.M2KNPq-j_ErWCScfOseWoQHaG7?w=210&h=196&c=7&r=0&o=5&pid=1.7');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 20px;
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      font-size: 20px;
+      font-style: oblique;
+      text-align: center;
+      font-weight: bolder;
+      width: 300px;
+      background-color: rgb(218, 33, 88);
+      border-radius: 20px;
+      color: white;
+    }
+
+    img {
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: white;
+      color: rgb(218, 33, 88);
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: rgb(255, 182, 193);
+    }
+  </style>
+</head>
+
+<body>
+    <form action="Payment.html">
+  <header >Earrings</header>
+  <div class="products">
+    <div class="product">
+      <img src="http://ts3.mm.bing.net/th?id=OIP.cDs_680FSG4n_ebPO9EEIwHaHa&pid=15.1" width="250" alt="Earring 1">
+      <figcaption>
+        White small stone hoop earrings.<br>450/-<br>
+        <button>Buy now</button>
+      </figcaption>
+    </div>
+    <div class="product">
+      <img src="https://th.bing.com/th?q=Swarovski+Crystal+Earrings&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" width="250" alt="Earring 2">
+      <figcaption>
+        Swarovski crystal earrings.<br>530/-<br>
+        <button>Buy now</button>
+      </figcaption>
+    </div>
+  </div>
+</form>
+</body>
+</html>
