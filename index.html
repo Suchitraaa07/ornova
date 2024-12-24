@@ -6,6 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>Login</title>
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Create a user object
+    const user = {
+        username: username,
+        email: email,
+        password: password // Note: Passwords should not be stored in plain text in a real application!
+    };
+
+    // Store user data in local storage
+    localStorage.setItem("user", JSON.stringify(user));
+
+    alert("Sign-up successful! Data stored locally.");
+});
+  </script>
   <style>
     h1 {
       text-align: center;
